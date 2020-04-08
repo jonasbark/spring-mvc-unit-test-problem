@@ -30,15 +30,15 @@ repositories {
 dependencies {
     implementation(group = "org.jetbrains.kotlin", name = "kotlin-reflect", version = "1.3.71")
 
-    api("org.springframework.boot:spring-boot-starter-data-jpa:2.2.6.RELEASE")
-    api("org.springframework.boot:spring-boot-starter-web:2.2.6.RELEASE")
-    api("org.springframework.boot:spring-boot-starter-security:2.2.6.RELEASE")
+    api("org.springframework.boot:spring-boot-starter-data-jpa")
+    api("org.springframework.boot:spring-boot-starter-web")
+    api("org.springframework.boot:spring-boot-starter-security")
     api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.5")
 
-    testImplementation("org.springframework.boot:spring-boot-starter-test:2.2.6.RELEASE")
-    testImplementation("org.springframework.security:spring-security-test:5.2.2.RELEASE")
-    testImplementation("org.jetbrains.kotlin:kotlin-test-junit:1.3.71")
-    testImplementation("org.jetbrains.kotlin:kotlin-test:1.3.71")
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.springframework.security:spring-security-test")
+    testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
+    testImplementation("org.jetbrains.kotlin:kotlin-test")
     runtimeOnly("com.h2database:h2") // only for local testing
 }
 
